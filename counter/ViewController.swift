@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var count: UILabel!
+    @IBAction func screenButton(sender: AnyObject) {
+        count.text = String(count.text!.toInt()! + 1)
+    }
 }
 
